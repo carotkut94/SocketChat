@@ -51,16 +51,6 @@ io.on('connection', (socket) => {
                 io.to(socket.id).emit('inserted', data.to);
             });
         });
-        // $.ajax({
-        //     data: {msg: msg, userID: usid, username: usname},
-        //     type: "post",
-        //     url: "http://localhost/tutordip/home/chat_Ins",
-        //
-        //     success: function (data) {
-        //         // console.log("data");
-        //         // alert("Data Save: " + data);
-        //     }
-        // });
     });
 
     socket.on('typing', async function (data) {
